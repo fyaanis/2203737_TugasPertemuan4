@@ -1,0 +1,33 @@
+package Soal1;
+
+import java.util.Scanner;
+
+/*
+ * @author NISWA
+ */
+
+public class Soal1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Masukkan tiga huruf (pastikan huruf adalah huruf kecil) ");
+        System.out.print("Masukkan huruf pertama : ");
+        char satu = scanner.next().charAt(0);
+        
+        System.out.print("Masukkan huruf ke-2 : ");
+        char dua = scanner.next().charAt(0);
+        
+        System.out.print("Masukkan huruf ke-3 : ");
+        char tiga = scanner.next().charAt(0);
+
+        if ((satu != 'a' && satu != 'e' && satu != 'i' && satu != 'o' && satu != 'u') &&
+            (tiga != 'a' && tiga != 'e' && tiga != 'i' && tiga != 'o' && tiga != 'u') &&
+            (dua == 'a' || dua == 'e' || dua == 'i' || dua == 'o' || dua == 'u')) {
+            System.out.println("Konsonan-vokal-konsonan");
+        } else {
+            System.out.println("Bukan konsonan-vokal-konsonan");
+        }
+    }
+
+}
