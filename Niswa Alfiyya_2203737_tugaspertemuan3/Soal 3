@@ -1,0 +1,27 @@
+package Soal3;
+
+import java.util.Scanner;
+
+/*
+ * @author NISWA
+ */
+
+public class Soal3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Masukkan jam masuk kerja :");
+        int masuk = scanner.nextInt();
+        
+        System.out.println("Masukkan jam keluar kerja :");
+        int keluar = scanner.nextInt();
+
+        int jamKerja;
+        if (masuk <= keluar) {
+            jamKerja = keluar - masuk;
+        } else {
+            jamKerja = keluar + 12 - masuk;
+        }
+
+        System.out.println("Lama Bekerja " + "adalah " + jamKerja + " Jam");
+    }   
+}
