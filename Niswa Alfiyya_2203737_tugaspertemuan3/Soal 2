@@ -1,0 +1,28 @@
+package Soal2;
+
+import java.util.Scanner;
+
+/**
+ * @author NISWA
+ */
+
+public class Soal2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Masukkan panjang sisi-sisi bangun");
+        System.out.println("Panjang sisi pertama:");
+        int side1 = scanner.nextInt();
+        
+        System.out.println("Panjang sisi ke-2:");
+        int side2 = scanner.nextInt();
+        
+        System.out.println("Panjang sisi ke-3:");
+        int side3 = scanner.nextInt();
+        
+        if (side1 == side2 && side2 == side3) {
+            System.out.println("Termasuk Kubus");
+        } else {
+            System.out.println("Tidak termasuk Kubus");
+        }
+    }
+}
